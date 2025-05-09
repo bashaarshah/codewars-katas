@@ -3,20 +3,20 @@ import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
 
 public class SolutionTest { 
-    @Test
-    public void givenTwoWordsSeperate(){
-      /**
+
+      /*
        * 1. Arrange
        * 2. Act
        * 3. Assert
-       */
+      */
       
+    @Test
+    public void givenTwoWordsSeperate(){
        String expected = "camel Casing";
 
        String actual = Solution.camelCase("camelCasing");
 
        assertEquals(expected, actual);
-
     }
 
     @Test
@@ -30,12 +30,10 @@ public class SolutionTest {
 
     @Test
     public void givenNonAlphanumericCharacters(){
-
       String expected = "cam!el C! Ase";
 
       String actual = Solution.camelCase("cam!elC!Ase");
 
       assertEquals(expected, actual);
-
     }
 }
