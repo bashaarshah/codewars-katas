@@ -30,4 +30,3 @@ class Solution {
  * 5. We add a space there
  * 6. Return the new string
  */
-
