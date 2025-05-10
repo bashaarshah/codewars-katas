@@ -1,0 +1,39 @@
+# Ignore IntelliJ IDEA project files
+ .idea/
+ 
+ # Ignore compiled Java code (class files)
+ *.class
+ 
+ # Ignore build output directories (common names)
+ # 'out' is common for IntelliJ's default compiler output
+ out/
+ # 'bin' is sometimes used for compiled output
+ bin/
+ # 'target' is the default build output directory for Maven,
+ # but sometimes appears in other setups
+ target/
+ 
+ # Ignore package files
+ *.jar
+ *.war
+ *.ear
+ 
+ # Ignore log files
+ *.log
+ 
+ # Ignore temporary files
+ *~
+ \#*#
+ *.swp
+ .DS_Store # macOS specific temporary file
+ 
+ # --- Specific to YOUR setup (Manual JARs in lib) ---
+ # If you manually add JARs to a 'lib' folder AND want to track them in Git,
+ # DO NOT add a rule that ignores the lib folder.
+ # If you added the JAR to lib/ and want Git to track it, make sure
+ # you do NOT have a line like:
+ # lib/
+ # or
+ # *.jar
+ # (unless you specifically re-include JARs in lib, which is more complex)
+ # Since you likely want to track lib/ and its contents, just don't add an ignore rule for it.
